@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>광고 랜딩 페이지 템플릿</title>
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="노들역 포스코 더샵 | 프리미엄 아파트 분양 랜딩페이지" />
+  <meta property="og:description" content="노들역 초역세권 포스코 더샵 분양정보. 한강 조망권과 최적 입지! 빠른 상담 신청하세요." />
+  <meta property="og:image" content="https://example.com/posco-thesharp-og-image.jpg" />
+  <meta property="og:url" content="https://example.com/nodul-posco-thesharp" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags (카카오톡 미리보기 안정화용) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="노들역 포스코 더샵 | 프리미엄 아파트 분양 랜딩페이지" />
+  <meta name="twitter:description" content="노들역 초역세권 포스코 더샵 분양정보. 한강 조망권과 최적 입지! 빠른 상담 신청하세요." />
+  <meta name="twitter:image" content="https://example.com/posco-thesharp-og-image.jpg" />
+  <meta name="twitter:url" content="https://example.com/nodul-posco-thesharp" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* 이미지가 화면 가득 차도록 */
+    .hero-bg { background-size: cover; background-position: center; }
+    /* 섹션 간 스크롤 부드럽게 */
+    html { scroll-behavior: smooth; }
+    /* 모바일 고정 콜 버튼 */
+    .floating-call { position: fixed; bottom: 16px; right: 16px; z-index: 50; }
+  </style>
+</head>
+<body class="text-gray-900 bg-white">
+  <!-- 상단 고정 바: 상담 전화 -->
+  <div class="sticky top-0 z-40 bg-black/80 backdrop-blur text-white">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between text-sm md:text-base">
+      <span class="font-semibold">바로상담</span>
+      <a href="tel:010-5560-1577" class="font-bold underline">010-5560-1577</a>
+      <a href="#contact" class="hidden md:inline-block px-3 py-1 rounded-full bg-white text-black font-medium">상담 신청</a>
+    </div>
+  </div>
+
+  <!-- Hero 섹션: 전체화면 이미지 + 문구 + CTA -->
+  <section class="h-[85vh] md:h-screen hero-bg flex items-center" style="background-image:url('111.png');">
+    <div class="w-full h-full bg-black/50">
+      <div class="max-w-5xl mx-auto h-full flex flex-col justify-center px-6 text-white text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">한강 라이프, 지금 바로 누리세요</h1>
+        <p class="mt-4 md:mt-6 text-base md:text-xl opacity-90">교통·생활·자연이 모두 가까운 프리미엄 주거단지</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#benefits" class="px-6 py-3 rounded-full bg-white text-black font-semibold">핵심 포인트 보기</a>
+          <a href="tel:010-5560-1577" class="px-6 py-3 rounded-full bg-yellow-400 text-black font-semibold">전화 상담</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 신뢰 요소: 배지/문구
+  <section class="border-y">
+    <div class="max-w-6xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div>
+        <p class="text-2xl md:text-3xl font-extrabold">5min</p>
+        <p class="text-sm text-gray-600">핵심역세권(예시)</p>
+      </div>
+      <div>
+        <p class="text-2xl md:text-3xl font-extrabold">3면</p>
+        <p class="text-sm text-gray-600">채광 최적 설계(예시)</p>
+      </div>
+      <div>
+        <p class="text-2xl md:text-3xl font-extrabold">100%</p>
+        <p class="text-sm text-gray-600">전세대 남향 위주(예시)</p>
+      </div>
+      <div>
+        <p class="text-2xl md:text-3xl font-extrabold">24H</p>
+        <p class="text-sm text-gray-600">스마트 보안 시스템(예시)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 핵심 포인트 섹션 
+  <section id="benefits" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="1.png" alt="단지 이미지" class="rounded-2xl shadow" />
+      <div>
+        <h2 class="text-2xl md:text-4xl font-extrabold">교통·생활·자연 3박자 입지</h2>
+        <ul class="mt-6 space-y-3 text-gray-700 leading-relaxed list-disc list-inside">
+          <li>더블역세권(예시)로 빠른 도심 접근</li>
+          <li>대형 쇼핑·문화·의료 인프라 인접</li>
+          <li>공원/수변 산책로 도보권</li>
+        </ul>
+        <div class="mt-8 flex gap-3">
+          <a href="#gallery" class="px-5 py-3 rounded-lg bg-black text-white font-semibold">갤러리 보기</a>
+          <a href="#contact" class="px-5 py-3 rounded-lg border font-semibold">상담 신청</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->
+  <!-- 갤러리(그리드) -->
+  <section id="benefits" class="max-w-3xl mx-auto px-6 py-16 space-y-8">
+	<img src="2.png" class="rounded-lg shadow w-full object-cover">
+	<img src="3.png" class="rounded-lg shadow w-full object-cover">
+	<img src="4.png" class="rounded-lg shadow w-full object-cover">
+	<img src="6.png" class="rounded-lg shadow w-full object-cover">
+	<img src="7.png" class="rounded-lg shadow w-full object-cover">
+	<img src="8.png" class="rounded-lg shadow w-full object-cover">
+	<img src="9.png" class="rounded-lg shadow w-full object-cover">
+	<img src="10.png" class="rounded-lg shadow w-full object-cover">
+	<img src="11.png" class="rounded-lg shadow w-full object-cover">
+	<img src="13.png" class="rounded-lg shadow w-full object-cover">
+	<img src="15.png" class="rounded-lg shadow w-full object-cover">
+	<img src="16.png" class="rounded-lg shadow w-full object-cover">
+	<img src="17.png" class="rounded-lg shadow w-full object-cover">
+  </section>
+  <section class="py-16 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-6">상담 신청</h2>
+  <p class="mb-6">버튼을 누르면 전화 상담으로 이동합니다.</p>
+
+  <a href="tel:010-5560-1577" target="_blank"
+     class="inline-block px-12 py-6 text-2xl font-bold text-white bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition">
+    전화상담
+  </a>
+	</section>
+  <!-- 위치/지도 섹션(이미지 대체) -->
+  <section class="bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+	  <div>
+        <h3 class="text-xl md:text-3xl font-extrabold">생활 인프라 한 눈에</h3>
+           <!-- 
+		<ul class="mt-6 space-y-3 text-gray-700 list-disc list-inside">
+          <li>지하철/버스 환승 편리(예시)</li>
+          <li>대형마트·문화시설 인접</li>
+          <li>공원/산책로 도보권</li>
+        </ul>
+		-->
+      </div>
+	  </div>
+      <img src="5.png" alt="지도/입지 이미지" class="rounded-lg shadow w-full object-cover">
+	  <img src="14.png" alt="지도/입지 이미지" class="rounded-lg shadow w-full object-cover">
+    
+  </section>
+
+  <!-- 상담/문의 폼 -->
+  <section class="py-16 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-6">관심 고객 등록</h2>
+  <p class="mb-6">버튼을 누르면 관심 고객 등록 페이지로 이동합니다.</p>
+
+  <a href="https://naver.me/F6n4C4eL" target="_blank"
+     class="inline-block px-12 py-6 text-2xl font-bold text-white bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition">
+    상담 신청하기
+  </a>
+	</section>
+
+  <!-- 모바일 고정 콜 버튼 -->
+  <div class="floating-call flex gap-3 md:hidden">
+  <!-- 전화 상담 버튼 -->
+  <a href="tel:010-5560-1577" 
+     class="inline-flex items-center gap-2 px-4 py-3 rounded-full shadow-lg bg-black text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+      <path d="M1.5 4.5a3 3 0 013-3h1.372a2 2 0 011.789 1.106l1.286 2.572a2 2 0 01-.45 2.33l-1.05 1.05a15.978 15.978 0 007.356 7.356l1.05-1.05a2 2 0 012.33-.45l2.572 1.286A2 2 0 0122.5 19.5V21a3 3 0 01-3 3h-.75C8.56 24 0 15.44 0 4.5V3.75a3 3 0 013-3h1.5"/>
+    </svg>
+    전화 상담
+  </a>
+
+  <!-- 신청 버튼 -->
+  <a href="https://naver.me/F6n4C4eL" target="_blank"
+     class="inline-flex items-center gap-2 px-4 py-3 rounded-full shadow-lg bg-green-500 text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+    </svg>
+    관심고객 등록
+  </a>
+</div>
+  <script>
+    // 폼 더미 제출 처리(백엔드 연결 전용)
+    const form = document.getElementById('leadForm');
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      msg.classList.remove('hidden');
+      form.reset();
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
